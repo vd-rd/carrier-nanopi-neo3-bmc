@@ -7,3 +7,10 @@ Features provided:
  - Wired Ethernet interface
  - Gated power supply
 
+## Motivation
+
+Most SBC platforms lack the features needed for a rack style deployment where you can power cycle the board or get a remote console to debug what went wrong.
+The ESP32 uC is fairly popular, but the reason behind selecting it to act as a BMC is that is one of the cheapest uCs equipped with a Ethernet PHY.
+
+## Hardware overview
+ (Diagram)
