@@ -923,6 +923,37 @@ W = angled&lt;p&gt;
 <text x="0" y="2.9996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.9996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOIC8" urn="urn:adsk.eagle:footprint:16321/1" library_version="33">
+<description>&lt;b&gt;SOIC-8&lt;/b&gt; CASE 751-07&lt;p&gt;
+Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF&lt;p&gt;
+&lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;PLATIC SMALL-OUTLINE PACKAGE&lt;br&gt;
+Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="-1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIODFN250X200X89-4N" urn="urn:adsk.eagle:package:25216397/1" type="model" library_version="31">
@@ -937,6 +968,15 @@ W = angled&lt;p&gt;
 &lt;p&gt;24-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.50 X 2.50 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="QFN50P400X400X100-25T250N"/>
+</packageinstances>
+</package3d>
+<package3d name="SOIC8" urn="urn:adsk.eagle:package:16475/2" type="model" library_version="33">
+<description>SOIC-8 CASE 751-07
+Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF
+D (R-PDSO-G8)PLATIC SMALL-OUTLINE PACKAGE
+Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
+<packageinstances>
+<packageinstance name="SOIC8"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -985,6 +1025,22 @@ W = angled&lt;p&gt;
 <wire x1="-20.32" y1="-35.56" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
 <text x="-20.32" y="18.034" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CAN" urn="urn:adsk.eagle:symbol:7695991/1" library_version="33">
+<pin name="VDD" x="-12.7" y="5.08" length="short"/>
+<pin name="RXD" x="-12.7" y="2.54" length="short"/>
+<pin name="TXD" x="-12.7" y="0" length="short"/>
+<pin name="VSS" x="-12.7" y="-2.54" length="short"/>
+<pin name="RS" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="VREF" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="CANL" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="CANH" x="12.7" y="5.08" length="short" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1044,6 +1100,31 @@ W = angled&lt;p&gt;
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25111534/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2551" urn="urn:adsk.eagle:component:7695993/1" prefix="U" uservalue="yes" library_version="33">
+<gates>
+<gate name="G$1" symbol="CAN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="RS" pad="8"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VREF" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16475/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -9999,6 +10080,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R211" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="C211" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF/6.3V"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
+<part name="U2" library="parts-microchip" library_urn="urn:adsk.eagle:library:7686352" deviceset="MCP2551" device="" package3d_urn="urn:adsk.eagle:package:16475/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -10545,6 +10628,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="GND4" gate="1" x="12.7" y="58.42" smashed="yes">
 <attribute name="VALUE" x="10.16" y="55.88" size="1.778" layer="96"/>
 </instance>
+<instance part="R1" gate="G$1" x="129.54" y="83.82" smashed="yes">
+<attribute name="NAME" x="121.158" y="84.0486" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.588" y="84.074" size="1.778" layer="96"/>
+</instance>
+<instance part="U2" gate="G$1" x="205.74" y="60.96" smashed="yes">
+<attribute name="NAME" x="195.58" y="71.12" size="1.778" layer="95"/>
+<attribute name="VALUE" x="203.2" y="68.58" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10843,6 +10934,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="45.72" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 <label x="30.48" y="88.9" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
+<label x="144.78" y="83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MDIO" class="0">
 <segment>
@@ -10919,6 +11015,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <pinref part="U200" gate="G$1" pin="!INT!/REFCLKO"/>
 <wire x1="114.3" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RXD1" class="0">
@@ -11059,16 +11156,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="167.64" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="TXD0" class="0">
 <segment>
 <pinref part="U100" gate="G$1" pin="IO19"/>
 <wire x1="152.4" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
+<label x="167.64" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="TXD1" class="0">
 <segment>
 <pinref part="U100" gate="G$1" pin="IO22"/>
 <wire x1="152.4" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
+<label x="167.64" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_EN" class="0">
@@ -11078,19 +11177,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="167.64" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="RXD0" class="0">
 <segment>
 <pinref part="U100" gate="G$1" pin="IO25"/>
 <wire x1="152.4" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
+<label x="167.64" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="RXD1" class="0">
 <segment>
 <pinref part="U100" gate="G$1" pin="IO26"/>
 <wire x1="152.4" y1="71.12" x2="175.26" y2="71.12" width="0.1524" layer="91"/>
+<label x="167.64" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CRS" class="0">
+<net name="CRS_DV" class="0">
 <segment>
 <pinref part="U100" gate="G$1" pin="IO27"/>
 <wire x1="152.4" y1="68.58" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
