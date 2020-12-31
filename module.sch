@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -311,7 +311,7 @@ DIN A4, landscape with location and doc. field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="MODULE_ESP32-WROOM-32D" urn="urn:adsk.eagle:package:24918029/1" type="box" library_version="1">
+<package3d name="MODULE_ESP32-WROOM-32D" urn="urn:adsk.eagle:package:24918029/2" type="model" library_version="2">
 <packageinstances>
 <packageinstance name="MODULE_ESP32-WROOM-32D"/>
 </packageinstances>
@@ -363,7 +363,7 @@ DIN A4, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP32-WROOM-32D" urn="urn:adsk.eagle:component:24918030/1" prefix="U" library_version="1">
+<deviceset name="ESP32-WROOM-32D" urn="urn:adsk.eagle:component:24918030/2" prefix="U" library_version="2">
 <description>Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 + EDR, Class 1, 2 and 3 Transceiver Module 2.4GHz ~ 2.5GHz Integrated, Trace Surface Mount &lt;a href="https://pricing.snapeda.com/parts/ESP32-WROOM-32D/Espressif%20Systems/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="ESP32-WROOM-32D" x="0" y="0"/>
@@ -408,7 +408,7 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="TXD0" pad="35"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24918029/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24918029/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -923,37 +923,6 @@ W = angled&lt;p&gt;
 <text x="0" y="2.9996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.9996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SOIC8" urn="urn:adsk.eagle:footprint:16321/1" library_version="33">
-<description>&lt;b&gt;SOIC-8&lt;/b&gt; CASE 751-07&lt;p&gt;
-Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF&lt;p&gt;
-&lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;PLATIC SMALL-OUTLINE PACKAGE&lt;br&gt;
-Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="3" x="0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="4" x="1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="8" x="-1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="6" x="0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="5" x="1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="DIODFN250X200X89-4N" urn="urn:adsk.eagle:package:25216397/1" type="model" library_version="31">
@@ -968,15 +937,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 &lt;p&gt;24-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.50 X 2.50 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="QFN50P400X400X100-25T250N"/>
-</packageinstances>
-</package3d>
-<package3d name="SOIC8" urn="urn:adsk.eagle:package:16475/2" type="model" library_version="33">
-<description>SOIC-8 CASE 751-07
-Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF
-D (R-PDSO-G8)PLATIC SMALL-OUTLINE PACKAGE
-Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
-<packageinstances>
-<packageinstance name="SOIC8"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1025,22 +985,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 <wire x1="-20.32" y1="-35.56" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
 <text x="-20.32" y="18.034" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="CAN" urn="urn:adsk.eagle:symbol:7695991/1" library_version="33">
-<pin name="VDD" x="-12.7" y="5.08" length="short"/>
-<pin name="RXD" x="-12.7" y="2.54" length="short"/>
-<pin name="TXD" x="-12.7" y="0" length="short"/>
-<pin name="VSS" x="-12.7" y="-2.54" length="short"/>
-<pin name="RS" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="VREF" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="CANL" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="CANH" x="12.7" y="5.08" length="short" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1100,31 +1044,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25111534/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP2551" urn="urn:adsk.eagle:component:7695993/1" prefix="U" uservalue="yes" library_version="33">
-<gates>
-<gate name="G$1" symbol="CAN" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="SOIC8">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VREF" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16475/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -9008,7 +8927,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="parts-passives">
+<library name="parts-passives" urn="urn:adsk.eagle:library:8154151">
 <packages>
 <package name="FER0805" urn="urn:adsk.eagle:footprint:10599320/2">
 <description>&lt;b&gt;SMD Ferite bead&lt;/b&gt;&lt;p&gt;</description>
@@ -9054,7 +8973,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="F-EU">
+<symbol name="F-EU" urn="urn:adsk.eagle:symbol:10599321/1" library_version="47">
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="-1.27" size="1.016" layer="97">&gt;PACKAGE</text>
@@ -9065,7 +8984,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FER-" prefix="L" uservalue="yes">
+<deviceset name="FER-" urn="urn:adsk.eagle:component:10599323/5" prefix="L" uservalue="yes" library_version="47">
 <gates>
 <gate name="G$1" symbol="F-EU" x="0" y="0"/>
 </gates>
@@ -10008,7 +9927,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U100" library="parts-espressif" library_urn="urn:adsk.eagle:library:24918026" deviceset="ESP32-WROOM-32D" device="" package3d_urn="urn:adsk.eagle:package:24918029/1"/>
+<part name="U100" library="parts-espressif" library_urn="urn:adsk.eagle:library:24918026" deviceset="ESP32-WROOM-32D" device="" package3d_urn="urn:adsk.eagle:package:24918029/2"/>
 <part name="SV1" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE13-2" device="" package3d_urn="urn:adsk.eagle:package:8172/1"/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-2" device="" package3d_urn="urn:adsk.eagle:package:8368/1"/>
 <part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
@@ -10033,7 +9952,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R500" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="C500" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF/6.3V"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L1" library="parts-passives" deviceset="FER-" device="0603" package3d_urn="urn:adsk.eagle:package:10729190/2"/>
+<part name="L1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="FER-" device="0603" package3d_urn="urn:adsk.eagle:package:10729190/2"/>
 <part name="U300" library="parts-nxp" library_urn="urn:adsk.eagle:library:8344619" deviceset="PCF85063A" device="TT" package3d_urn="urn:adsk.eagle:package:25256244/1"/>
 <part name="BAT1" library="parts-elna" library_urn="urn:adsk.eagle:library:8169083" deviceset="DCK-3R3E224U-E" device="" package3d_urn="urn:adsk.eagle:package:7451333/3"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10045,7 +9964,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R304" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="TBD"/>
 <part name="D301" library="parts-onsemi" library_urn="urn:adsk.eagle:library:7659655" deviceset="NSR0320" device="" package3d_urn="urn:adsk.eagle:package:8169104/1"/>
 <part name="X1" library="parts-adam_tech" library_urn="urn:adsk.eagle:library:7445409" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:8403677/3"/>
-<part name="X2" library="parts-adam_tech" library_urn="urn:adsk.eagle:library:7445409" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:8403677/3"/>
 <part name="U400" library="parts-st" library_urn="urn:adsk.eagle:library:7567453" deviceset="LD1117" device="S50" package3d_urn="urn:adsk.eagle:package:8152583/1" value="1117_3v3"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF/6.3V"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF/6.3V"/>
@@ -10081,7 +9999,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C211" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF/6.3V"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
-<part name="U2" library="parts-microchip" library_urn="urn:adsk.eagle:library:7686352" deviceset="MCP2551" device="" package3d_urn="urn:adsk.eagle:package:16475/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -10571,13 +10488,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="29.21" y="31.9786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="27.178" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="-1" x="241.3" y="81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="241.3" y="80.391" size="1.778" layer="95"/>
-</instance>
-<instance part="X2" gate="-2" x="241.3" y="86.36" smashed="yes" rot="R180">
-<attribute name="VALUE" x="243.84" y="90.043" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="241.3" y="85.471" size="1.778" layer="95"/>
-</instance>
 <instance part="J1" gate="G$1" x="203.2" y="137.16" smashed="yes"/>
 <instance part="GND2" gate="1" x="200.66" y="129.54" smashed="yes">
 <attribute name="VALUE" x="198.12" y="127" size="1.778" layer="96"/>
@@ -10631,10 +10541,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="R1" gate="G$1" x="129.54" y="83.82" smashed="yes">
 <attribute name="NAME" x="121.158" y="84.0486" size="1.778" layer="95"/>
 <attribute name="VALUE" x="132.588" y="84.074" size="1.778" layer="96"/>
-</instance>
-<instance part="U2" gate="G$1" x="205.74" y="60.96" smashed="yes">
-<attribute name="NAME" x="195.58" y="71.12" size="1.778" layer="95"/>
-<attribute name="VALUE" x="203.2" y="68.58" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
