@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9999,6 +9999,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C211" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF/6.3V"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
+<part name="R104" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
+<part name="C104" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10998,6 +11001,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="181.3814" y="113.03" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="186.182" y="113.03" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R104" gate="G$1" x="83.82" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="82.3214" y="115.57" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="87.122" y="115.57" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C104" gate="G$1" x="83.82" y="109.22" smashed="yes">
+<attribute name="NAME" x="85.344" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.344" y="104.521" size="1.778" layer="96"/>
+</instance>
+<instance part="GND10" gate="1" x="83.82" y="101.6" smashed="yes">
+<attribute name="VALUE" x="81.28" y="99.06" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11026,6 +11040,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="48.26" y="15.24"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C104" gate="G$1" pin="2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -11046,6 +11064,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C102" gate="G$1" pin="1"/>
 <junction x="48.26" y="22.86"/>
 <label x="25.4" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R104" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<label x="76.2" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MDIO" class="0">
@@ -11109,6 +11132,98 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U100" gate="G$1" pin="IO23"/>
 <wire x1="152.4" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 <label x="167.64" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U100" gate="G$1" pin="EN"/>
+<pinref part="C104" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R104" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="111.76" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
+<junction x="83.82" y="111.76"/>
+</segment>
+</net>
+<net name="PWR_GATE" class="0">
+<segment>
+<wire x1="213.36" y1="157.48" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
+<label x="233.68" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART_BOARD_TX" class="0">
+<segment>
+<wire x1="213.36" y1="154.94" x2="243.84" y2="154.94" width="0.1524" layer="91"/>
+<label x="233.68" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U100" gate="G$1" pin="IO32"/>
+<wire x1="152.4" y1="66.04" x2="175.26" y2="66.04" width="0.1524" layer="91"/>
+<label x="167.64" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART_BOARD_RX" class="0">
+<segment>
+<wire x1="213.36" y1="152.4" x2="243.84" y2="152.4" width="0.1524" layer="91"/>
+<label x="233.68" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U100" gate="G$1" pin="IO33"/>
+<wire x1="152.4" y1="63.5" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
+<label x="167.64" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_SDA" class="0">
+<segment>
+<wire x1="213.36" y1="149.86" x2="243.84" y2="149.86" width="0.1524" layer="91"/>
+<label x="233.68" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_SCL" class="0">
+<segment>
+<wire x1="213.36" y1="147.32" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
+<label x="233.68" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FAN_RPM" class="0">
+<segment>
+<wire x1="213.36" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
+<label x="233.68" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U100" gate="G$1" pin="IO34"/>
+<wire x1="111.76" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="88.9" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FAN_PWM" class="0">
+<segment>
+<wire x1="213.36" y1="142.24" x2="243.84" y2="142.24" width="0.1524" layer="91"/>
+<label x="233.68" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U100" gate="G$1" pin="TXD0"/>
+<wire x1="111.76" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U100" gate="G$1" pin="RXD0"/>
+<wire x1="111.76" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED_STATUS" class="0">
+<segment>
+<pinref part="U100" gate="G$1" pin="IO2"/>
+<wire x1="152.4" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
+<label x="165.1" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BOARD_RESET" class="0">
+<segment>
+<wire x1="213.36" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="233.68" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
