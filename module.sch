@@ -9605,12 +9605,37 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
 <rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
 </package>
+<package name="SOT95P240X110-3" urn="urn:adsk.eagle:footprint:8169090/1" library_version="22">
+<description>3-SOT23, 0.95 mm pitch, 2.40 mm span, 2.90 X 1.30 X 1.10 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.40 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
+<circle x="-1.204" y="1.7586" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.7" y1="1.5686" x2="0.7" y2="1.5686" width="0.12" layer="21"/>
+<wire x1="0.7" y1="1.5686" x2="0.7" y2="0.5586" width="0.12" layer="21"/>
+<wire x1="-0.7" y1="-1.5686" x2="0.7" y2="-1.5686" width="0.12" layer="21"/>
+<wire x1="0.7" y1="-1.5686" x2="0.7" y2="-0.5586" width="0.12" layer="21"/>
+<wire x1="0.7" y1="-1.5" x2="-0.7" y2="-1.5" width="0.12" layer="51"/>
+<wire x1="-0.7" y1="-1.5" x2="-0.7" y2="1.5" width="0.12" layer="51"/>
+<wire x1="-0.7" y1="1.5" x2="0.7" y2="1.5" width="0.12" layer="51"/>
+<wire x1="0.7" y1="1.5" x2="0.7" y2="-1.5" width="0.12" layer="51"/>
+<smd name="1" x="-1.0245" y="0.95" dx="1.1801" dy="0.6092" layer="1"/>
+<smd name="2" x="-1.0245" y="-0.95" dx="1.1801" dy="0.6092" layer="1"/>
+<smd name="3" x="1.0245" y="0" dx="1.1801" dy="0.6092" layer="1"/>
+<text x="0" y="2.6436" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2036" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOD323" urn="urn:adsk.eagle:package:8169104/1" type="model" library_version="22">
 <description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="SOD323"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P240X110-3" urn="urn:adsk.eagle:package:8169088/1" type="model" library_version="22">
+<description>3-SOT23, 0.95 mm pitch, 2.40 mm span, 2.90 X 1.30 X 1.10 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.40 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P240X110-3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9633,6 +9658,43 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="N-MOSFET" urn="urn:adsk.eagle:symbol:8169093/1" library_version="22">
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="3.302" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.032" y="0.762"/>
+<vertex x="2.032" y="-0.762"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NSR0320" urn="urn:adsk.eagle:component:8320499/1" prefix="D" uservalue="yes" library_version="22">
@@ -9647,6 +9709,26 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:8169104/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2N7002" urn="urn:adsk.eagle:component:8169094/2" prefix="Q" library_version="22">
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P240X110-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8169088/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -12137,6 +12219,13 @@ Source: www.kingbright.com</description>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
 <part name="SV4" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CONN-1X6" device="" package3d_urn="urn:adsk.eagle:package:11194668/1"/>
+<part name="SV5" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q1" library="parts-onsemi" library_urn="urn:adsk.eagle:library:7659655" deviceset="2N7002" device="" package3d_urn="urn:adsk.eagle:package:8169088/1"/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -12276,6 +12365,32 @@ Source: www.kingbright.com</description>
 <instance part="GND21" gate="1" x="33.02" y="81.28" smashed="yes">
 <attribute name="VALUE" x="30.48" y="78.74" size="1.778" layer="96"/>
 </instance>
+<instance part="SV5" gate="G$1" x="228.6" y="48.26" smashed="yes" rot="R180">
+<attribute name="VALUE" x="229.87" y="55.88" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="229.87" y="42.418" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R9" gate="G$1" x="198.12" y="38.1" smashed="yes">
+<attribute name="NAME" x="194.31" y="39.5986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="194.31" y="34.798" size="1.778" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="198.12" y="45.72" smashed="yes">
+<attribute name="NAME" x="194.31" y="47.2186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="194.31" y="42.418" size="1.778" layer="96"/>
+</instance>
+<instance part="GND23" gate="1" x="193.04" y="35.56" smashed="yes">
+<attribute name="VALUE" x="190.5" y="33.02" size="1.778" layer="96"/>
+</instance>
+<instance part="Q1" gate="G$1" x="182.88" y="45.72" smashed="yes">
+<attribute name="VALUE" x="171.45" y="45.72" size="1.778" layer="96"/>
+<attribute name="NAME" x="171.45" y="48.26" size="1.778" layer="95"/>
+</instance>
+<instance part="GND24" gate="1" x="185.42" y="38.1" smashed="yes">
+<attribute name="VALUE" x="182.88" y="35.56" size="1.778" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="172.72" y="40.64" smashed="yes">
+<attribute name="NAME" x="168.91" y="42.1386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="168.91" y="37.338" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12354,6 +12469,17 @@ Source: www.kingbright.com</description>
 <wire x1="38.1" y1="86.36" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="86.36" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
+<junction x="185.42" y="40.64"/>
 </segment>
 </net>
 <net name="+5V_BOARD" class="0">
@@ -12532,6 +12658,11 @@ Source: www.kingbright.com</description>
 <wire x1="53.34" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
 <label x="45.72" y="96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SV5" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="48.26" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
+<label x="208.28" y="48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWR_GATE" class="0">
 <segment>
@@ -12542,6 +12673,44 @@ Source: www.kingbright.com</description>
 <wire x1="48.26" y1="86.36" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
 <junction x="48.26" y="91.44"/>
 <label x="30.48" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="SV5" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="SV5" gate="G$1" pin="3"/>
+<wire x1="220.98" y1="45.72" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="FAN_RPM" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="38.1" x2="203.2" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="43.18" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
+<junction x="203.2" y="43.18"/>
+<label x="208.28" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FAN_PWM" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="180.34" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="40.64" x2="165.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="40.64" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
+<junction x="165.1" y="43.18"/>
+<label x="152.4" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -13329,6 +13498,11 @@ Source: www.kingbright.com</description>
 <wire x1="213.36" y1="157.48" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
 <label x="233.68" y="157.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U100" gate="G$1" pin="IO4"/>
+<wire x1="152.4" y1="106.68" x2="175.26" y2="106.68" width="0.1524" layer="91"/>
+<label x="167.64" y="106.68" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="UART_BOARD_TX" class="0">
 <segment>
@@ -13357,11 +13531,21 @@ Source: www.kingbright.com</description>
 <wire x1="213.36" y1="149.86" x2="243.84" y2="149.86" width="0.1524" layer="91"/>
 <label x="233.68" y="149.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U100" gate="G$1" pin="IO15"/>
+<wire x1="152.4" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<label x="167.64" y="93.98" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
 <wire x1="213.36" y1="147.32" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
 <label x="233.68" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U100" gate="G$1" pin="IO14"/>
+<wire x1="152.4" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<label x="167.64" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAN_RPM" class="0">
